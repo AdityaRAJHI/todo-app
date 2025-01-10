@@ -56,9 +56,8 @@ function Calculator() {
   const [display, setDisplay] = useState('0');
   const [memory, setMemory] = useState<number>(0);
 
-  const operations = ['+', '-', '*', '/', '^', 'sin', 'cos', 'tan', 'sqrt'];
-
   const calculate = (expression: string): string => {
+
     try {
       // Replace special functions
       let expr = expression
